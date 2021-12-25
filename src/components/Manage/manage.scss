@@ -1,0 +1,19 @@
+.manage-main {
+    display: flex;
+    margin-top: 12px;
+    margin-right: 8px;
+}
+
+@media (min-width: 760px) and (max-width: 1023px) {
+    .manage-main {
+        margin-top: calc(12% + 12px);
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 759px) {
+    .manage-main {
+        flex-direction: column;
+        margin-right: 0;
+    }
+}

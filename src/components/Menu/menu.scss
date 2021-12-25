@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    left: 0;
+    top: 0;
+    width: 20%;
+    margin: 6px 6px 12px 6px;
+    padding: 6px;
+    border-radius: 10px;
+    background-color: #ccc;
+    opacity: 1;
+    height: calc(100vh - 18px);
+
+    .logo {
+        width: 96px;
+        display: block;
+        margin: auto;
+        margin-top: 48px;
+    }
+
+    .menuItem {
+        list-style: none;
+        margin-left: 8px;
+        a {
+            text-decoration: none;
+            display: block;
+            padding: 24px;
+            margin-top: 12px;
+        }
+
+        .menuIcon {
+            color: black;
+            margin-right: 8px;
+            font-size: 18px;
+        }
+
+        .menuItem-title {
+            color: black;
+        }
+    }
+    
+}
+
+.red {
+    background-color: red;
+}
+
+
+@media (min-width: 760px) and (max-width: 1023px) {
+    .menu {
+        width: 20%;
+        position: fixed;
+        z-index: 1;
+
+        .menuItem {
+            margin: auto;
+
+            a {
+                padding: 24px 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 759px) {
+    .menu {
+        /* display: none; */
+        width: 100%;
+        position: fixed;
+        top: calc(100% - 64px);
+        z-index: 1;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        background-color: red;
+        border-top: 1px solid #000;
+        .menu-list-item {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            .menu-logo {
+                display: none;
+            }
+
+            .menuItem {
+                height: 64px;
+                width: 20%;
+                margin: 0;
+                padding: 0;
+                border-radius: 0 !important;
+
+                a {
+                    text-align: center;
+                    padding: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    
+                    svg {
+                        margin: auto;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

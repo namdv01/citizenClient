@@ -1,0 +1,78 @@
+.infoManage-main {
+    width: 70%;
+    margin-top: 12px;
+    margin-right: 18px;
+    background-color: #ccc;
+    padding: 18px;
+    display: inline-block;
+    border-radius: 10px;
+    min-height: 82vh;
+    position: relative;
+
+    table {
+        border-spacing: 0;
+        border: 1px solid #fff;
+        
+        th,td {
+            border: 1px solid #fff;
+            padding: 5px 8px;
+            text-align: center;
+
+            input {
+                max-width: 100px;
+            }
+        }
+    }
+
+    .ma-page {
+        position: absolute;
+        bottom: 0;
+        span {
+            display: inline-block;
+            margin: 12px 6px;
+            padding: 4px 8px;
+            border: 2px solid rgb(233, 179, 31);
+            border-radius: 50%;
+            background-color: #fff;
+        }
+
+        span:hover {
+            border: 2px solid #fff;
+            background-color: rgb(233, 179, 31);
+            cursor: pointer;
+        }
+
+        .ma-choose {
+            border: 2px solid #fff;
+            background-color: rgb(233, 179, 31);
+        }
+    }
+
+}
+
+@media (min-width: 760px) and (max-width: 1023px) {
+    .infoManage-main {
+        width: 100%;
+
+        .item-bor {
+            border: 3px solid #000;
+            margin: 24px auto;
+            padding: 4px 12px;
+        }
+        
+    }
+}
+
+@media (max-width: 759px) {
+    .infoManage-main {
+        width: 100%;
+        border-radius: 0;
+
+        .item-bor {
+            border: 3px solid #000;
+            margin: 24px 2px;
+            padding: 4px 12px;
+        }
+        
+    }
+}

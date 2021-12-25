@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    position: relative;
+
+    .contentNav {
+        width: 80%;
+        margin-top: 6px;
+        margin-bottom: 12px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1023px) {
+    .menu {
+        width: 20%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .wrapper {
+
+        .contentNav {
+            margin-left: calc(20% + 12px);
+        }
+    }
+}
+
+@media (max-width: 759px) { 
+    .wrapper {
+        .contentNav {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}

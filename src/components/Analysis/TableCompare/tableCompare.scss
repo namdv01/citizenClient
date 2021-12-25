@@ -1,0 +1,21 @@
+.tableC-main {
+    border-spacing: 0;
+    border: 1px solid white;
+    margin: 24px auto;
+    text-align: center;
+
+    .tableC-header {
+
+        th {
+            border: 1px solid white;
+            padding: 3px 5px;
+        }
+    }
+
+    .tableC-body {
+        td {
+            border: 1px solid white;
+            padding: 3px 5px;
+        }
+    }
+}

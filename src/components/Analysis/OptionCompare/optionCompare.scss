@@ -1,0 +1,40 @@
+.optionCompare-header {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 12px;
+    font-style: italic;
+}
+
+.option-quantity {
+    display: flex;
+    margin: auto;
+    margin-top: 12px;
+    align-items: center;
+
+    h4 {
+        margin: 0 5%;
+    }
+}
+
+.option-submit {
+    margin: 12px auto;
+    width: 60%;
+    text-align: center;
+
+    button {
+        padding: 6px 12px;
+    }
+
+    button:hover {
+        cursor: pointer;
+    }
+}
+
+.option-selectSize {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.none {
+    display: none;
+}

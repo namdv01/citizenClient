@@ -1,0 +1,54 @@
+.cre-ci-main {
+    width: 40%;
+    background-color: #ccc;
+    padding: 8px 6px;
+    border-radius: 10px;
+
+    .cre-ci-form {
+        padding: 6px;
+        margin-top: 16px;
+
+        .cre-ci-item {
+            margin-bottom: 4px;
+
+            label {
+                min-width: 160px;
+                display: inline-block;
+            }
+
+            input[type=text] {
+                width: 50%;
+            }
+        }
+    }
+
+    .cre-ci-sub {
+        display: flex;
+        justify-content: space-around;
+        button {
+            padding: 4px 8px;
+            border: 1px solid rgb(51, 167, 221);
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: rgb(51, 167, 221);
+            border: 1px solid #fff;
+            color: #fff;
+        }
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1023px) {
+    .cre-ci-main {
+        width: 100%;
+    }
+}
+
+@media (max-width: 759px) {
+    .cre-ci-main {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 24px;
+    }
+}

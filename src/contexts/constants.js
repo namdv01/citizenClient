@@ -1,0 +1,1 @@
+export const api = 'https://citizenserver.herokuapp.com'

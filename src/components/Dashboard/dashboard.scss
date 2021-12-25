@@ -1,0 +1,120 @@
+.dashboard {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0;
+
+    .lineOne {
+        display: flex;
+        width: 100%;
+
+        .number {
+            background-color: #ccc;
+            border-radius: 10px;
+            padding: 12px 24px;
+            margin-right: 18px;
+            margin-top: 12px;
+            width: 40%;
+            font-size: 32px;
+        }
+
+        .column {
+            background-color: #ccc;
+            border-radius: 10px;
+            margin-right: 8px;
+            margin-top: 12px;
+            width: 60%;
+        }
+    }
+
+    .lineTwo {
+        width: 100%;
+        display: flex;
+
+        .rank {
+            background-color: #ccc;
+            border-radius: 10px;
+            margin-right: 18px;
+            margin-top: 12px;
+            width: 40%;
+        }
+
+        .pie {
+            background-color: #ccc;
+            border-radius: 10px;
+            margin-right: 8px;
+            margin-top: 12px;
+            width: 60%;
+        }
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1023px) {
+    .dashboard {
+        margin-top: 12%;
+        
+        .lineOne {
+            flex-direction: column;
+
+            .number {
+                width: 100%;
+            }
+
+            .column {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+
+        .lineTwo {
+            flex-direction: column;
+
+            .rank {
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            .pie {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 759px) {
+    .dashboard {
+        .lineOne {
+            flex-direction: column;
+
+            .number {
+                width: 100%;
+                margin: 20px 0;
+                border-radius: 0;
+            }
+
+            .column {
+                width: 100%;
+                margin: 20px 0;
+                border-radius: 0;
+            }
+        }
+    
+        .lineTwo {
+            flex-direction: column;
+
+            .rank {
+                width: 100%;
+                margin: 20px 0;
+                border-radius: 0;
+            }
+
+            .pie {
+                width: 100%;
+                margin-top: 20px ;
+                margin-bottom: 80px;
+                border-radius: 0;
+            }
+        }
+    }
+}

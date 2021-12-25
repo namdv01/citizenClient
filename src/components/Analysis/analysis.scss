@@ -1,0 +1,57 @@
+.analysis-main {
+    display: flex;
+    margin-top: 12px;
+
+    .self {
+        width: 50%;
+        background-color: #ccc;
+        border-radius: 10px;
+        margin-right: 4px;
+        min-height: 83vh;
+    }
+
+    .another {
+        width: 50%;
+        background-color: #ccc;
+        border-radius: 10px;
+        margin-left: 4px;   
+        margin-right: 8px;
+        min-height: 83vh;
+
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1023px) {
+    .analysis-main {
+        flex-direction: column;
+        margin-top: calc(12% + 12px);
+
+        .self {
+            width: 100%;
+        }
+
+        .another {
+            margin-top: 12px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 759px) { 
+    .analysis-main {
+        flex-direction: column;
+
+        .self {
+            width: 100%;
+            border-radius: 0;
+        }
+
+        .another {
+            margin: 0;
+            margin-top: 20px;
+            width: 100%;
+            margin-bottom: 80px;
+            border-radius: 0;
+        }
+    }
+}

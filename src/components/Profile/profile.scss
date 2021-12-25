@@ -1,0 +1,100 @@
+.profile-main {
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 10px;
+    background-color: #ccc;
+    min-height: 84vh;
+
+    .profile-title {
+        text-align: center;
+        font-size: 22px;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+
+    .profile-item {
+        display: flex;
+        height: 60px;
+        margin-left: 8px;
+
+        .profile-itemName {
+            text-align: center;
+            min-width: 160px;
+            line-height: 60px;
+        }
+
+        .spacing2dot {
+            line-height: 60px;
+            font-weight: 700;
+        }
+
+        .profile-itemValue {
+            line-height: 60px;
+            padding-left: 12px; 
+        }
+
+        .changePassword {
+            line-height: 36px;
+            margin: 12px;
+        }
+        .changePassword:hover {
+            cursor: pointer;
+        }
+
+        .currentPass,.newPass {
+            display: flex;
+            flex-direction: column;
+            margin: 12px;
+        }
+
+        .currentPass {
+            margin-left: 160px;
+        }
+
+        .updatePass {
+            height: 40px;
+            margin: 10px 8px;
+            padding: 8px;
+        }
+        .updatePass:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.non-active {
+    display: none !important;
+}
+
+#lock {
+    display: none;
+}
+
+@media (min-width: 760px) and (max-width: 1023px) {
+    .profile-main {
+        margin-top: calc(12% + 12px);
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 759px) {
+    .profile-main {
+        margin:24px 0 80px;
+        border-radius: 0;
+
+        .item-hide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 120px;
+
+            .currentPass {
+                margin: 12px;
+            }
+
+            .updatePass {
+                margin: 12px;
+            }
+        }
+    }
+}

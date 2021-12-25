@@ -1,0 +1,68 @@
+.createManage-main {
+    width: 30%;
+    margin-top: 12px;
+    background-color: #ccc;
+    border-radius: 10px;
+    padding: 18px;
+    max-height: 450px;
+
+    .create-header {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 18px;
+        text-transform: uppercase;
+    }
+
+    .create-item {
+        height: 36px;
+        text-align: center;
+        margin-bottom: 16px;
+
+        label {
+            display: inline-block;
+            min-width: 150px;
+        }
+
+        input {
+            display: inline-block;
+            margin-top: 4px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .create-submit {
+        display: flex;
+        .create,.remove {
+            width: 50%;
+            padding: 8px 4px;
+            margin: 8px 24px;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1023px) {
+    .createManage-main {
+        width: 100%;
+
+        .create-item {
+            input {
+                padding: 8px 24px ;
+            }
+        }
+    }
+}
+
+@media (max-width: 759px) {
+    .createManage-main {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 80px;
+
+        .create-item {
+            input {
+                padding: 8px 24px ;
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.cs-main {
+    display: flex;
+    background-color: #ccc;
+    padding: 12px;
+    margin-top: 12px;
+    margin-right: 8px;
+    border-radius: 10px;
+    width: 100%;
+
+    .success {
+        background-color: rgb(72, 216, 72);
+        padding: 4px 6px;
+        border-radius: 3px;
+        border: 1px solid #fff;
+    }
+
+    .pass:hover {
+        background-color: rgb(40, 117, 231);
+        cursor: pointer;
+    }
+
+    .pass {
+        padding: 4px 6px;
+        border: 1px solid #fff;
+        border-radius: 3px;
+        background-color: rgb(240, 182, 75);
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1023px) {
+    .cs-main {
+        margin-bottom: 18px;
+    }
+}
+
+@media (max-width: 759px) { 
+    .cs-main {
+        margin-bottom: 18px;
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,83 @@
+.border-navheader {
+    background-color: #ccc;
+    margin-right: 8px;
+    border-radius: 10px;
+
+    .navheader {
+        background-color: #ccc;
+        display: flex;
+        float: right;
+        border-radius: 10px;
+        
+        li {
+            list-style: none;
+            padding: 8px;
+            margin: 18px;
+        }
+    
+        .user {
+            position: relative;
+            font-size: 20px;
+    
+            .avatar {
+                font-size: 20px;
+                margin-right: 8px;
+            }
+
+            .logout {
+                top: calc(100%);
+                padding: 2px;
+                border: 1px solid #333;
+                display: none;
+                background-color: #fff;
+                position: absolute;
+                min-width: 108px;
+                font-size: 20px;
+
+                .iconLogout {
+                    font-size: 22px;
+                    margin-right: 6px;
+                    color: red;
+                }
+            }
+
+            .logout:hover {
+                cursor: pointer;
+            }
+    
+            
+        }
+    
+        .user:hover .logout{
+            display: block;
+            cursor: pointer;
+        }
+
+        .setting {
+            font-size: 20px;
+
+            .iconSetting {
+                font-size: 20px;
+                margin-right: 8px;
+            }
+        }
+        
+    }
+}
+
+@media (min-width: 760px) and (max-width: 1023px) {
+    .border-navheader {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        width: 100%;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 759px) { 
+    .border-navheader {
+        margin: 0;
+        border-radius: 0;
+    }
+}

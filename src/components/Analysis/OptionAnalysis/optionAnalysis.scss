@@ -1,0 +1,38 @@
+.option-header {
+    text-align: center;
+    padding: 8px;
+    font-size: 22px;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+.option-item {
+    margin: auto;
+    width: 40%;
+    margin-bottom: 4px;
+    
+    label {
+        margin-left: 8px;
+        font-size: 20px;
+        
+    }
+
+    .option-btn {
+        margin: 12px auto;
+        display: block;
+        padding: 10px 16px;
+        font-size: 18px;
+    }
+    .option-btn:hover {
+        cursor: pointer;
+        color: #cce;
+    }
+
+    
+}
+
+.none {
+    display: none;
+}
+
+
+
